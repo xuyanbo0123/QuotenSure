@@ -1,0 +1,13 @@
+KEY,MOSS,DISPLAY,IS_DISPLAY,REVI
+_0,0,Less than 1 year,1,1
+_1,1,1-3 years,1,1
+_2,2,1-3 years,0,2
+_3,3,1-3 years,0,3
+_4,4,3-5 years,1,4
+_5,5,3-5 years,0,5
+_6,6,5-10 years,1,6
+_7,7,5-10 years,0,7
+_8,8,5-10 years,0,8
+_9,9,5-10 years,0,9
+_10,10,5-10 years,0,10
+_10+,11,10+ years,1,11

@@ -1,0 +1,41 @@
+.data-panel {
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  text-align: center;
+  .today {
+    color:#00a1ff;
+  }
+  .yesterday {
+    color:#068b00;
+  }
+  .header {
+    padding: 0px 0px 0px 0px;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    background-color: rgba(255, 215, 0, 0.41);
+  }
+  .bg-brokers-web {
+    background-color: rgba(255, 50, 0, 0.29);
+  }
+  .bg-moss {
+    background-color: rgba(255, 0, 96, 0.29);
+  }
+  .body {
+    padding: 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    background-color: white;
+  }
+  h5 {
+    font-size: 1.5em;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: 8px 0 8px 0;
+    line-height: 1.2;
+  }
+}

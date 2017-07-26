@@ -1,0 +1,12 @@
+KEY,MOSS,DISPLAY,IS_DISPLAY,REVI
+_SOME_OR_NO_HIGHSCHOOL,Some Or No HighSchool,Some Or No HighSchool,0,None
+_HIGHSCHOOL_DIPLOMA,HighSchool Diploma,High School,1,High school diploma
+_GED,GED,GED,0,Other
+_SOME_COLLEGE,Some College,Some College,1,Some College
+_ASSOCIATE_DEGREE,Associate Degree,Associate Degree,0,Associate Degree
+_BACHELORS_DEGREE,Bachelors Degree,Bachelors Degree,1,Bachelors Degree
+_MASTERS_DEGREE,Masters Degree,Masters Degree,1,Masters Degree
+_DOCTORATE_DEGREE,Doctorate Degree,Doctorate Degree,1,Doctorate Degree
+_TRADE_VOCATIONAL_SCHOOL,Trade Vocational School,Trade Vocational School,0,Other
+_OTHER_PROFESSIONAL_DEGREE,Other Professional Degree,Other Professional Degree,0,Other
+_OTHER_NONPROFESSIONAL_DEGREE,Other NonProfessional Degree,Other NonProfessional Degree,0,Other

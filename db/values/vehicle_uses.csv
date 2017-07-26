@@ -1,0 +1,9 @@
+KEY,MOSS,DISPLAY,IS_DISPLAY,REVI
+_COMMUTEWORK,CommuteWork,CommuteWork,0,Commute To/From Work
+_COMMUTESCHOOL,CommuteSchool,CommuteSchool,0,Commute To/From School
+_COMMUTEVARIES,CommuteVaries,Commute,1,Commute To/From Work
+_FARM,Farm,Farm,0,Farm
+_GOVERNMENT,Government,Government,0,Government
+_PLEASURE,Pleasure,Pleasure,1,Pleasure
+_BUSINESS,Business,Business,1,Business Corporate
+_OTHER,Other,Other,1,Pleasure

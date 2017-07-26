@@ -1,0 +1,46 @@
+.nested-fields
+  .hidden
+    =f.hidden_field :rid, { value: '0', class: 'rid' }
+  .row.title-row
+    .col-lg-1.col-md-1.col-sm-1.form-group
+      a.title-logo
+        i.fa.fa-car
+    .col-lg-1.col-md-1.col-sm-1.form-group
+      a.year-text
+    .col-lg-3.col-md-3.col-sm-3.form-group
+      a.make-text
+    .col-lg-6.col-md-6.col-sm-6.form-group
+      a.model-text
+    .col-lg-1.col-md-1.col-sm-1.form-group
+      .btn-bar
+        a.toggle-btn.plus.init-fade +
+        a.toggle-btn.minus –
+        a.fake.remove-btn ×
+        = link_to_remove_association '×',  f, class: 'remove-btn init-fade'
+  .ctrl
+    .row
+      .col-lg-2.col-md-2.col-sm-2.form-group.year
+        = f.input :year_id, collection:Year.pairs, prompt:"Select", input_html:{ class: 'year' }
+      .col-lg-3.col-md-3.col-sm-3.form-group.make.init-fade
+        = f.input :make_id, as: :select, input_html:{ class: 'make' }
+      .col-lg-4.col-md-4.col-sm-4.form-group.model.init-fade
+        = f.input :model_id, as: :select, input_html:{ class: 'model' }
+      .details.init-fade
+        .col-lg-3.col-md-3.col-sm-3.form-group
+          = f.input :owner_type_id, label: 'Ownership', collection: pairs(OwnerType), selected: OwnerType.selected_id
+    .details.init-fade
+      .row
+        .col-lg-4.col-md-4.col-sm-4.form-group
+          = f.input :garage_type_id, :label => "Overnight parking", collection: pairs(GarageType), selected: GarageType.selected_id
+        .col-lg-4.col-md-4.col-sm-4.form-group
+          = f.input :annual_mileage_id, :label => "Annual mileage", collection: pairs(AnnualMileage), selected: AnnualMileage.selected_id
+        .col-lg-4.col-md-4.col-sm-4.form-group
+          = f.input :vehicle_use_id, :label => "Primary use", collection: pairs(VehicleUse), selected: VehicleUse.selected_id, input_html: {class: 'vehicle-use'}
+    .details.init-fade
+      .row
+        .col-lg-4.col-md-4.col-sm-4.form-group
+          = f.input :coll_deduct_id, :label => "Collision deductible", collection: pairs(CollDeduct), selected: CollDeduct.selected_id
+        .col-lg-4.col-md-4.col-sm-4.form-group
+          = f.input :comp_deduct_id, :label => "Comprehensive deductible", collection: pairs(CompDeduct), selected: CompDeduct.selected_id
+        .col-lg-4.col-md-4.col-sm-4.form-group.commute-day
+          = f.input :commute_day_id, :label => "Weekly commute days", collection: pairs(CommuteDay), selected: CommuteDay.selected_id, input_html: {class: 'commute-day'}

@@ -1,0 +1,60 @@
+section.page-block
+  .container
+    h1 Welcome to the Quote 'n' Sure Management Console
+    h2 Campaigns list
+    - if @campaigns.nil? or @campaigns.empty?
+      ul
+        li No campaigns available.
+    - else
+      ul
+        li Total number of campaigns: #{@campaign_count}
+      table.table
+        tr
+          th ID
+          th Name
+          th Status
+        - @campaigns.each do |campaign|
+          tr
+            td #{campaign.id}
+            td #{campaign.name}
+            td #{campaign.status}
+      h2 AdGroups list
+      ul
+        li Total number of ad groups: #{@ad_group_count}
+      table.table
+        tr
+          th ID
+          th GID
+          th Campaign
+          th Name
+          th Status
+        - @ad_groups.each do |ad_group|
+          tr
+            td #{ad_group.id}
+            td #{ad_group.gid}
+            td #{ad_group.campaign_name}
+            td #{ad_group.name}
+            td #{ad_group.status}
+      h2 AdGroupKeywords list
+      ul
+        li Total number of ad group keywords: #{@ad_group_keyword_count}
+      table.table
+        tr
+          th ID
+          th AdGroup
+          th Name
+          th MatchType
+          th FirstCPC
+          th TopCPC
+          th Quality
+          th Status
+        - @ad_group_keywords.each do |keyword|
+          tr
+            td #{keyword.id}
+            td #{keyword.ad_group_name}
+            td #{keyword.keyword}
+            td #{keyword.match_type}
+            td #{to_dollar(keyword.first_cpc)}
+            td #{to_dollar(keyword.top_cpc)}
+            td #{keyword.quality}
+            td #{keyword.user_status}

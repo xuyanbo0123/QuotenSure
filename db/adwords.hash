@@ -1,0 +1,40 @@
+{
+    :total_num_entries=>8,
+    :page_type=>"AdGroupCriterionPage",
+    :entries=>
+    [
+        {
+            :ad_group_id=>16607056493,
+            :criterion_use=>"BIDDABLE",
+            :criterion=>
+            {
+                :id=>42819626,
+                :type=>"KEYWORD",
+                :criterion_type=>"Keyword",
+                :text=>"amica insurance",
+                :match_type=>"EXACT",
+                :xsi_type=>"Keyword"
+            },
+            :ad_group_criterion_type=>"BiddableAdGroupCriterion",
+            :user_status=>"ENABLED",
+            :first_page_cpc=>
+            {
+                :amount=>
+                {
+                    :comparable_value_type=>"Money",
+                    :micro_amount=>4330000
+                }
+            },
+            :top_of_page_cpc=>
+            {
+                :amount=>
+                {
+                    :comparable_value_type=>"Money",
+                    :micro_amount=>5200000
+                }
+            },
+            :quality_info=>{:quality_score=>5},
+            :xsi_type=>"BiddableAdGroupCriterion"
+        }
+    ]
+}

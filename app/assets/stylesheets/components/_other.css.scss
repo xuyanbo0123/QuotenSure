@@ -1,0 +1,78 @@
+
+
+
+
+/*Page Blocks
+---------------------------------------------------------*/
+.page-block {
+  padding: 50px 0 60px 0;
+}
+.page-block.color {
+  background-color: #ff6f69;
+}
+.page-block.less-space-bottom {
+  padding-bottom: 10px !important;
+}
+.page-block.less-space-top {
+  padding-top: 10px !important;
+}
+.block {
+  padding: 40px 0 10px 0;
+}
+
+
+
+
+
+/*Social Networks
+---------------------------------------------------------*/
+.social-networks {
+  width: 100%;
+  display: table;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+}
+.social-networks.small {
+  padding-top: 5px !important;
+}
+.social-networks a {
+  display: inline-block;
+  margin: 0 50px 0 50px;
+  color: #313447;
+  font-size: 3.3em;
+  text-decoration: none;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.social-networks a:hover {
+  color: #ff6f69;
+}
+.social-networks.small a {
+  margin: 0 15px 0 15px !important;
+  font-size: 2em;
+}
+
+/*Mobile Apps
+---------------------------------------------------------*/
+.mobile-apps .btn i {
+  font-size: 1em;
+}
+
+/*Team
+---------------------------------------------------------*/
+.team h3,
+.team p {
+  font-weight: 400;
+  text-align: center;
+}
+.team .social-networks {
+  padding: 20px 0 20px 0;
+}
+.team .social-networks a {
+  margin: 0 20px 0 20px;
+}
+.team img {
+  margin-bottom: 35px;
+}

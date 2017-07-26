@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: 2015-04-18
+  campaign: MyString
+  clicks: 1
+  impressions: 1
+  cost: 1
+  avg_position: 9.99
+
+two:
+  day: 2015-04-18
+  campaign: MyString
+  clicks: 1
+  impressions: 1
+  cost: 1
+  avg_position: 9.99

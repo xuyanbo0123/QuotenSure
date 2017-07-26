@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MSAResponse>
+  <Status>Accepted</Status>
+  <ResponseID>e1d657ac-612b-4342-9e6f-b3c8c495ee88</ResponseID>
+  <Payout>10</Payout>
+</MSAResponse>
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MSAResponse>
+<Status>Accepted</Status>
+<ResponseID>e6b9246a-16fa-4466-a293-e6f9f87beeaa</ResponseID>
+<Payout>10</Payout>
+</MSAResponse>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<MSAResponse>
+<Status>Rejected</Status>
+<ErrorCode>INVALID_LEAD_DATA</ErrorCode>
+<ErrorDescription>The 'State' element is invalid - The value '' is invalid according to its datatype 'StateType' - The Enumeration constraint failed.,The 'State' element is invalid - The value '' is invalid according to its datatype 'StateType' - The Enumeration constraint failed.</ErrorDescription>
+</MSAResponse>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<MSAResponse>
+<Status>Rejected</Status>
+<ErrorCode>UNABLE_TO_MONETIZE</ErrorCode>
+<ErrorDescription>Lead Rejected</ErrorDescription>
+</MSAResponse>

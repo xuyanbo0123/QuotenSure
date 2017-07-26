@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ad_group_gid: 1
+  gid: 1
+  criterion_use: MyString
+  user_status: MyString
+  first_cpc: 1
+  top_cpc: 1
+  quality: 9.99
+  keyword: MyString
+  match_type: MyString
+
+two:
+  ad_group_gid: 1
+  gid: 1
+  criterion_use: MyString
+  user_status: MyString
+  first_cpc: 1
+  top_cpc: 1
+  quality: 9.99
+  keyword: MyString
+  match_type: MyString

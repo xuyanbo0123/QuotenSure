@@ -1,0 +1,91 @@
+/*Components & Styles Page
+---------------------------------------------------------*/
+.cs-page header {
+  width: 100%;
+  padding: 30px 0 30px 0;
+  margin-bottom: 50px;
+  background-color: #ff6f69;
+}
+.cs-page .top-space { margin-top: 60px; }
+.cs-page .bottom-space { margin-bottom: 40px; }
+.cs-page .top-space-extra { margin-top: 80px; }
+.cs-page header .btn {
+  margin-top: 27px;
+}
+h2.cs-heading {
+  width: 100%;
+  text-transform: uppercase;
+  color: #777777;
+  font-size: 2.35em;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #e8e8e8;
+  margin-top: 65px;
+  margin-bottom: 10px;
+}
+h3.cs-heading {
+  font-weight: 100;
+  margin-bottom: 45px;
+  color: #777777;
+}
+.less-space {
+  margin-bottom: 25px !important;
+}
+.cs-page .devider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e8e8e8;
+  margin-bottom: 15px;
+}
+.icon-set {
+  width: 100%;
+}
+.icon-set i {
+  display: inline-block;
+  font-size: 2.5em;
+  margin: 0 20px 20px 0;
+}
+.icon-set span {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.icon-set + .btn {
+  margin-top: 25px;
+}
+.icon-set + .btn i {
+  font-size: 1.1em;
+}
+.cs-page .gallery {
+  margin: 0 0 0 -40px;
+}
+.cs-page .footer {
+  width: 100%;
+  padding: 30px 0 30px 0;
+  margin-top: 60px;
+  background-color: #ff6f69;
+}
+.cs-page .footer .btn-up {
+  margin-top: 22px;
+}
+.cs-page .footer .btn-up i {
+  margin: 0;
+  font-size: 1.2em;
+}
+.cs-page .footer .copyright {
+  color: #ffffff;
+  margin: 10px 0 0 0;
+  text-align: left;
+}
+.cs-page .footer .copyright a {
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: underline;
+}
+.cs-page .footer .copyright a:hover {
+  text-decoration: none;
+}
+.cs-page .countdown {
+  color: #313447;
+  margin-bottom: 0px;
+}

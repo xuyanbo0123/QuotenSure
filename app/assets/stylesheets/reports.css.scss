@@ -1,0 +1,19 @@
+.reports {
+  @import "components/wizard";
+  @import "components/form";
+  @import "components/tab";
+  @import "components/table";
+  @import "colors/color-499ed7";
+  @import "components/data_panel";
+
+  .brokers-web {
+    color: #00a1ff;
+  }
+  .moss {
+    color: #068b00;
+  }
+  .google {
+    color: #a68100;
+  }
+
+}

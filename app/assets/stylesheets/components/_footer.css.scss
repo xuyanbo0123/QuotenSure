@@ -1,0 +1,55 @@
+/*Footer
+---------------------------------------------------------*/
+.footer {
+  width: 100%;
+  background-color: #ff6f69;
+  padding: 40px 0 25px 0;
+  margin-top: 20px;
+}
+.footer .form-control {
+  color: #ffffff;
+}
+.footer .form-group {
+  margin-top: 35px;
+}
+.footer .form-group .btn {
+  padding: 13px 25px 12px 25px;
+  margin-top: -1px;
+}
+.footer .form-control:-moz-placeholder {
+  color: #ffffff;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+.footer .form-control::-moz-placeholder {
+  color: #ffffff;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+.footer .form-control:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+.footer .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+.footer .placeholder {
+  color: #ffffff;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+.footer p.copyright {
+  margin: 40px 0 0 0;
+  text-align: center;
+  color: #ffffff;
+}
+.footer p.copyright a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.footer p.copyright a:hover {
+  text-decoration: none;
+}

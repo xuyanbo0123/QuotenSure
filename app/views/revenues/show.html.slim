@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong R type:
+  = @revenue.r_type
+p
+  strong Source:
+  = @revenue.source
+p
+  strong Token:
+  = @revenue.token
+p
+  strong Amount:
+  = @revenue.amount
+
+= link_to 'Edit', edit_revenue_path(@revenue)
+'|
+= link_to 'Back', revenues_path

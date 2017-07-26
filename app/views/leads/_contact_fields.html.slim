@@ -1,0 +1,30 @@
+.nested-fields
+  .row.title-row
+    .col-lg-1.col-md-1.col-sm-1.form-group
+      a.title-logo
+        i.fa.fa-th-list
+    .col-lg-11.col-md-11.col-sm-11.form-group
+      a.address-text
+      a.space-text = ' '
+      a.city-text = ' '
+      a.space-text = ' '
+      a.state-text = ' '
+      a.space-text = ' '
+      a.zip-code-text = ' '
+  .row
+    .col-lg-8.col-md-8.col-sm-8.form-group
+      = f.input :address1, placeholder: 'e.g., 1234 Main St.', label: 'Street address (no P.O. box)', input_html:{ class: 'address street' }
+    .col-lg-2.col-md-2.col-sm-2.form-group
+      = f.input :address2, placeholder: 'e.g., 103', label: 'Apt./Unit #', input_html:{ class: 'address apt' }
+    .col-lg-2.col-md-2.col-sm-2.form-group
+      = f.input :zip, placeholder: 'Please enter your zip code', label: 'Zip code', input_html:{ class: 'zip-code', value: ' ' }
+  .row
+    .col-lg-6.col-md-6.col-sm-6.form-group
+      = f.input :phone, as: :tel, placeholder: 'Ten digits us phone number', input_html: {maxlength: '10', class: 'phone phoneUS'}
+    .col-lg-6.col-md-6.col-sm-6.form-group
+      = f.input :email, as: :email, placeholder: 'someone@example.com', input_html:{ class: 'email' }
+  .row
+    .col-lg-6.col-md-6.col-sm-6.form-group
+      = f.input :residence_status_id, label: 'Current residence', collection: pairs(ResidenceStatus), selected: ResidenceStatus.selected_id
+    .col-lg-6.col-md-6.col-sm-6.form-group
+      = f.input :residence_year_id, label: 'Years at current address', collection: pairs(ResidenceYear), selected: ResidenceYear.selected_id

@@ -1,0 +1,61 @@
+section#ads.page-block
+  .container.ad-listings
+    h3.ad-header
+      b
+        | Cheapest car insurance companies in
+        = " "+@ad_request.get_proper_city_state
+    h4 Click on a few of the companies below to find the best rates!
+    /#agents.plain
+    /  .col-lg-12#advs-featured-header
+    /    .row
+    /      .col-lg-6.col-md-6.col-sm-7.form-group
+    /        span.featured
+    /          | Featured insurers in
+    /          span#featured-city
+    /            = " "+@ad_request.get_proper_city_state
+    .col-lg-12#advs-featured
+      - @ad_request.featured_ads.each do |ad|
+        a.row-link href = ad_path(ad) target='_blank' rel='nofollow'
+          .row
+            .col-lg-1.col-md-1.col-sm-1.form-group.vcenter
+              .number
+                h3
+                  = image_tag('star.png')
+            .col-lg-3.col-md-3.col-sm-4.form-group.vcenter.cell
+              .adv-wrapper__70_test style="margin-bottom:5px"
+                = image_tag(ad.logo_link, width: "184", style: "border:0")
+                .get-quote-button Get Your Quote
+            .col-lg-6.col-md-6.col-sm-4.form-group.vcenter.cell
+              h4.description == ad.header
+              == ad.content
+            .col-lg-2.col-md-2.col-sm-3.form-group.vcenter
+              fieldset
+                button#submit-button.form-submit
+                  fieldset
+                    b Confirm Rates
+                    div#step-title get quote
+                /.click-quote style="color:#2165a2;display:block;font-size: 12px;text-align:center" Click for a Free Quote
+    .col-lg-12#advs
+      - @ad_request.other_ads.each_with_index do |ad, index|
+        a.row-link href = ad_path(ad) target='_blank' rel='nofollow'
+          .row
+            .col-lg-1.col-md-1.col-sm-1.form-group.vcenter
+              .number
+                h3
+                  == index+3
+            .col-lg-3.col-md-3.col-sm-3.form-group.vcenter
+              .logo
+                .adv-wrapper
+                  .adv-button style="background-image:url(#{ad.logo_link});background-size:128px"
+            .col-lg-6.col-md-6.col-sm-6.form-group.vcenter
+              h5.description == ad.header
+              == ad.content
+            .col-lg-2.col-md-2.col-sm-2.form-group.vcenter
+              button.form-submit.next-button
+                fieldset
+                  .button-smaller-text GO
+              .click-quote style="color:#2165a2;display:block;font-size: 12px;" Click Here
+    .col-lg-12#footnote
+      .divide20
+      p The above insurance companies and carriers can be selected in order to start the quotation request process. Each company offers unique rates; therefore, be sure to obtain quotes from a variety of them in order to get a feel for the price range. Each question asked during the quote process will affect the rates because it's all used in determining premiums. Be sure to accurately answer the questions in order to obtain accurate prices. It would be wise to compare a variety of insurers in order to narrow down one which best suits what you're looking for.
+      p It is commonly advised by insurance professionals to complete a multiple-company comparison with good reason, it increases the options and provides better chances of finding lower rates for the desired coverage. While obtaining quotes, be sure to also consider other important factors such as customer service, claims assistance, financial stability and offered protection. Keep in mind that certain types of coverage may be requested if not offered such as towing and rental car coverage. Be sure to fully understand the available coverage to determine your own coverage recommendations.

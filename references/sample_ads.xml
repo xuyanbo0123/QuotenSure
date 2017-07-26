@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<samples type="array">
+  <!--geico-->
+  <sample>
+    <headline>See how much GEICO could save you in Jamaica Plain</headline>
+    <detail>&lt;ul&gt;&lt;li&gt;You could save 15% or more on car insurance&lt;/li&gt;&lt;li&gt;Get a FREE quote today!&lt;/li&gt;&lt;li&gt;24
+      hour claims service&lt;/li&gt;&lt;/ul&gt;</detail>
+    <logo>//d1b1sze6akzif0.cloudfront.net/img/tI6jOEqMxNPBVP16CowgVVlLbhtFJw/iYlhBCPE6SnCJpVoB2HqFN2ekyA.png</logo>
+    <display-link>www.geico.com</display-link>
+    <click-link>https://www.geico.com/</click-link>
+  </sample>
+  <!--progressive-->
+  <sample>
+    <headline>Progressive Insurance – You could save hundreds!</headline>
+    <detail>At Progressive you could save $475 or more on car insurance.&lt;br&gt;Get a free quote today and see how
+      much you could save.
+    </detail>
+    <logo>//d1b1sze6akzif0.cloudfront.net/img/lvd_Bp3u6dumeD2SP3AVwUIAnJyYNg/jI0ciML4aVL2l_YkM1DkA7TQZX8.png</logo>
+    <display-link>www.progressive.com</display-link>
+    <click-link>http://www.progressive.com/</click-link>
+  </sample>
+  <!--esurance-->
+  <sample>
+    <headline>You Could Save with Esurance!</headline>
+    <detail>Massachusetts Drivers - See If You Can Save Today&lt;br&gt;We&#39;ve Insured Over 5 million Vehicles Since 1999&lt;br&gt;
+      24/7 Customer Service - Located in the USA
+    </detail>
+    <logo>//d1b1sze6akzif0.cloudfront.net/img/7dfl9yMU9GzdIl9rFAPe-iz_j7h0gA/O2yQ5N5zaCrNIkKKJPX4MUykeew.png</logo>
+    <display-link>www.esurance.com</display-link>
+    <click-link>https://www.esurance.com/</click-link>
+  </sample>
+  <!--liberty mutual-->
+  <sample>
+    <headline>Liberty Mutual Auto Insurance</headline>
+    <detail>
+      &lt;ul&gt;&lt;li&gt;Helping People Live Safer, More Responsible Lives.&lt;/li&gt;&lt;li&gt;Providing Insurance Since 1912.&lt;/li&gt;&lt;li&gt;Get a Fast, Free Quote Online.&lt;/li&gt;&lt;/ul&gt;
+    </detail>
+    <logo>//images.vantage-media.net/logos/36767_804.gif</logo>
+    <display-link>https://www.libertymutual.com</display-link>
+    <click-link>https://www.libertymutual.com</click-link>
+  </sample>
+</samples>

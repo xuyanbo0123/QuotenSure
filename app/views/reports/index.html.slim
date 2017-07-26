@@ -1,0 +1,22 @@
+section.page-block
+  .container
+    h1 Welcome to the Quote 'n' Sure Report
+    h2 Campaign Report
+    ul
+      li Total number of campaigns: #{@campaign_reports.length}
+    table.table
+      tr
+        th Date
+        th Campaign
+        th Impressions
+        th Clicks
+        th Cost
+        th AvgPos
+      - @campaign_reports.each do |campaign_report|
+        tr
+          td #{campaign_report.day}
+          td #{campaign_report.campaign_name}
+          td #{campaign_report.impressions}
+          td #{campaign_report.clicks}
+          td #{campaign_report.cost}
+          td #{campaign_report.avg_position}

@@ -1,0 +1,17 @@
+.navi-toggle.group
+  span.dot
+  span.line
+  span.dot
+  span.line
+  span.dot
+  span.line
+  span.dot
+  span.line
+nav.main-navi
+  ul
+    li class=('active' if controller?("ad_requests") && action?("new"))
+      = link_to 'Home', root_path
+    li class=('active' if controller?('articles'))
+      = link_to 'Insurance Library', articles_path
+    li class=('active' if controller?("static_pages") && action?("about"))
+      = link_to 'About', about_path

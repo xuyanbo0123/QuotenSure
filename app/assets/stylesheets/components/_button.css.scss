@@ -1,0 +1,268 @@
+/*Buttons
+---------------------------------------------------------*/
+/*Flat Buttons*/
+button {
+  outline: none !important;
+}
+.btn-center {
+  display: table !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  border: none;
+  white-space: normal;
+  margin: 0 10px 20px 0;
+  padding: 13px 25px;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none !important;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.btn i {
+  font-size: 0.9em;
+  margin-right: 8px;
+}
+.btn:active,
+.btn.active {
+  outline: none !important;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-danger {
+  -webkit-transition: background-color 250ms ease;
+  -moz-transition: background-color 250ms ease;
+  transition: background-color 250ms ease;
+}
+.btn-default {
+  color: #ffffff;
+  background-color: #545b6c;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: #ffffff;
+  background-color: #464c59;
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: #313447;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #464962;
+}
+.btn-success {
+  color: #ffffff;
+  background-color: #4cc688;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  color: #ffffff;
+  background-color: #40ad75;
+}
+.btn-danger {
+  color: #ffffff;
+  background-color: #ff6f69;
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+  color: #ffffff;
+  background-color: #dc544f;
+}
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  background-color: #dcdad0;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #313447;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  background-color: #4cc688;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.btn-danger.disabled,
+.btn-danger[disabled],
+fieldset[disabled] .btn-danger,
+.btn-danger.disabled:hover,
+.btn-danger[disabled]:hover,
+fieldset[disabled] .btn-danger:hover,
+.btn-danger.disabled:focus,
+.btn-danger[disabled]:focus,
+fieldset[disabled] .btn-danger:focus,
+.btn-danger.disabled:active,
+.btn-danger[disabled]:active,
+fieldset[disabled] .btn-danger:active,
+.btn-danger.disabled.active,
+.btn-danger[disabled].active,
+fieldset[disabled] .btn-danger.active {
+  background-color: #4cc688;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/*3D Buttons*/
+.btn-3d {
+  display: inline-block;
+  position:relative;
+  vertical-align:middle;
+  white-space: nowrap;
+  text-align:center;
+  font-weight: 400;
+  cursor:pointer;
+  zoom:1;
+  border: none;
+  margin: 0 10px 20px 0;
+  padding: 10px 25px;
+  font-size: 16px;
+  color:#fff;
+  text-shadow:0 1px rgba(0,0,0,.4);
+  text-decoration: none !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.btn-3d i {
+  font-size: 0.9em;
+  margin-right: 8px;
+}
+.btn-3d:active{ top:2px; }
+.btn-3d.disabled,
+.btn-3d[disabled],
+fieldset[disabled] .btn-3d {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.btn-3d.btn-default {
+  -webkit-box-shadow: 0px 3px 0px 0px #343944;
+  -moz-box-shadow: 0px 3px 0px 0px #343944;
+  box-shadow: 0px 3px 0px 0px #343944;
+}
+.btn-3d.btn-default:active {
+  -webkit-box-shadow: 0px 1px 0px 0px #343944;
+  -moz-box-shadow: 0px 1px 0px 0px #343944;
+  box-shadow: 0px 1px 0px 0px #343944;
+}
+.btn-3d.btn-primary {
+  -webkit-box-shadow: 0px 3px 0px 0px #191b26;
+  -moz-box-shadow: 0px 3px 0px 0px #191b26;
+  box-shadow: 0px 3px 0px 0px #191b26;
+}
+.btn-3d.btn-primary:active {
+  -webkit-box-shadow: 0px 1px 0px 0px #191b26;
+  -moz-box-shadow: 0px 1px 0px 0px #191b26;
+  box-shadow: 0px 1px 0px 0px #191b26;
+}
+.btn-3d.btn-success {
+  -webkit-box-shadow: 0px 3px 0px 0px #339161;
+  -moz-box-shadow: 0px 3px 0px 0px #339161;
+  box-shadow: 0px 3px 0px 0px #339161;
+}
+.btn-3d.btn-success:active {
+  -webkit-box-shadow: 0px 1px 0px 0px #339161;
+  -moz-box-shadow: 0px 1px 0px 0px #339161;
+  box-shadow: 0px 1px 0px 0px #339161;
+}
+.btn-3d.btn-danger {
+  -webkit-box-shadow: 0px 3px 0px 0px #be4642;
+  -moz-box-shadow: 0px 3px 0px 0px #be4642;
+  box-shadow: 0px 3px 0px 0px #be4642;
+}
+.btn-3d.btn-danger:active {
+  -webkit-box-shadow: 0px 1px 0px 0px #be4642;
+  -moz-box-shadow: 0px 1px 0px 0px #be4642;
+  box-shadow: 0px 1px 0px 0px #be4642;
+}
+
+/*Button Sizes*/
+.btn-lg {
+  padding: 17px 35px !important;
+  font-size: 18px;
+  border-radius: 6px;
+}
+.btn-3d.btn-lg {
+  padding: 15px 35px !important;
+  border-radius: 4px;
+}
+.btn-sm {
+  padding: 9px 18px !important;
+  font-size: 14px !important;
+  border-radius: 3px;
+}
+.btn-3d.btn-sm {
+  padding: 7px 18px !important;
+}
+.btn-xs {
+  padding: 7px 14px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.btn-3d.btn-xs {
+  padding: 4px 14px;
+  border-radius: 2px;
+}

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ad_group_gid: 1
+  gid: 1
+  status: MyString
+  approval_status: MyString
+  headline: MyString
+  description1: MyString
+  description2: MyString
+
+two:
+  ad_group_gid: 1
+  gid: 1
+  status: MyString
+  approval_status: MyString
+  headline: MyString
+  description1: MyString
+  description2: MyString

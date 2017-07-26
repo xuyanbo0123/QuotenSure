@@ -1,0 +1,87 @@
+/*Accordion
+---------------------------------------------------------*/
+.panel {
+  border-color: #313447;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 7px !important;
+}
+.panel > .panel-heading {
+  display: block;
+  color: #ffffff;
+  background-color: #313447;
+  border-color: #313447;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  transition: all 250ms ease;
+  text-decoration: none;
+  position: relative;
+}
+.panel > .panel-heading.collapsed {
+  background-color: transparent;
+  color: #313447;
+}
+.panel > .panel-heading.collapsed:hover {
+  background-color: #313447;
+  color: #ffffff;
+}
+.panel > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #313447;
+}
+.panel-body {
+  padding: 22px 15px 25px 15px;
+}
+.indicator {
+  position: absolute;
+  width: 15px;
+  height: auto;
+  min-height: 100%;
+  top: 0;
+  right: 17px;
+}
+.indicator .icon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  margin-top: -7px;
+}
+.indicator .icon .hr-line {
+  display: block;
+  width: 15px;
+  height: 1px;
+  background-color: #313447;
+  margin-top: 7px;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+.indicator .icon .vr-line {
+  display: block;
+  width: 1px;
+  height: 15px;
+  background-color: #313447;
+  margin-left: 7px;
+  margin-top: -8px;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+.panel > .panel-heading.collapsed .indicator .icon .hr-line,
+.panel > .panel-heading.collapsed .indicator .icon .vr-line {
+  background-color: #313447;
+}
+.panel > .panel-heading .indicator .icon .hr-line {
+  background-color: #ffffff;
+}
+.panel > .panel-heading .indicator .icon .vr-line {
+  display: none;
+}
+.panel > .panel-heading.collapsed .indicator .icon .vr-line {
+  display: block;
+}
+.panel > .panel-heading.collapsed:hover .indicator .icon .hr-line,
+.panel > .panel-heading.collapsed:hover .indicator .icon .vr-line {
+  background-color: #ffffff;
+}

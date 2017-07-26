@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  campaign_gid: 1
+  gid: 1
+  name: MyString
+  status: MyString
+
+two:
+  campaign_gid: 1
+  gid: 1
+  name: MyString
+  status: MyString

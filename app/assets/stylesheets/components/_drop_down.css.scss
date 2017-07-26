@@ -1,0 +1,88 @@
+/*Menu Dropdowns (Submenu)
+---------------------------------------------------------*/
+.main-navi ul li.has-dropdown .dropdown {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  background: #fff;
+  width: 250px;
+  padding: 15px 10px;
+  border: 1px solid #313447;
+  top: 80px;
+  -webkit-border-radius: 0 5px 5px 5px;
+  -moz-border-radius: 0 5px 5px 5px;
+  border-radius: 0 5px 5px 5px;
+}
+.main-navi ul li.has-dropdown:hover > .dropdown {
+  display: block;
+}
+.main-navi ul li.has-dropdown a i {
+  font-size: 0.95em;
+  margin-left: 8px;
+}
+.main-navi ul li .dropdown li {
+  width: 100%;
+  float: none;
+  margin: 0;
+  border-top: 1px solid #e0e0e0;
+}
+.main-navi ul li .dropdown li:first-child { border: 0; }
+.main-navi ul li .dropdown li a,
+.main-navi ul li.active .dropdown li a {
+  color: #313447;
+  border: none;
+  padding: 8px 10px;
+  font-size: 1.12em;
+}
+.main-navi ul li .dropdown li a:hover {
+  background: #e0e0e0;
+}
+@media screen and (max-width: 991px) {
+  .main-navi {
+    height: 280px;
+    overflow-y: auto !important;
+  }
+  .main-navi > ul {
+    padding-top: 0;
+  }
+  .main-navi ul li.has-dropdown:hover > .dropdown {
+    display: block;
+  }
+  .main-navi ul li.has-dropdown .dropdown {
+    display: block;
+    position:relative;
+    width: 100%;
+    max-height:0px;
+    font-size: 0.98em;
+    overflow: hidden;
+    padding: 0px 20px;
+    border: none;
+    top: auto;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: max-height 0.3s;
+    -moz-transition: max-height 0.3s;
+    transition: max-height 0.3s;
+  }
+  .main-navi ul li.has-dropdown .dropdown.expanded {
+    max-height: 800px;
+  }
+  .main-navi ul li.has-dropdown a {
+    position: relative;
+    padding-right: 60px;
+  }
+  .main-navi ul li.has-dropdown a i {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 40px;
+    height: 32px;
+    padding-top: 8px;
+    margin-top: -16px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+  }
+  .main-navi ul li.has-dropdown .dropdown a { padding-left: 20px; }
+}

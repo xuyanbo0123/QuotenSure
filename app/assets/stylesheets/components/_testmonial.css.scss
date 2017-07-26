@@ -1,0 +1,26 @@
+/*Testimonials
+---------------------------------------------------------*/
+.testimonials-slider {
+  padding-bottom: 70px;
+}
+.testimonials-slider blockquote {
+  margin-top: 20px;
+  p, footer {
+    font-weight: 300;
+  }
+}
+.testimonials-slider .carousel-indicators {
+  bottom: -20px;
+}
+.testimonials-slider .carousel-indicators li {
+  box-shadow: 0 0 0 2px transparent;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+.testimonials-slider .carousel-indicators .active {
+  box-shadow: 0 0 0 2px #313447;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+}

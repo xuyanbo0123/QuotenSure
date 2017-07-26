@@ -1,0 +1,51 @@
+section#wizard.page-block
+  .container
+    table.table
+      tbody
+        tr
+          th Date
+          th WDay
+          th.brokers-web BW
+          th.brokers-web Query
+          th.brokers-web Engage
+          th.brokers-web CPE
+          th.brokers-web CTR
+          th.moss Moss
+          th.moss Post
+          th.moss Sold
+          th.moss SR
+          th EPL
+          th.google Imp
+          th.google Clk
+          th.google CTR
+          th LPC
+          th TPC
+          th Cost
+          th Revenue
+          th Profit
+          th RPC
+          th RC
+        - @reports.each do |report|
+          tr
+            td #{report.date.strftime("%F")}
+            td #{report.date.strftime("%a")}
+            td.brokers-web #{humanized_money_with_symbol(report.brokers_web.revenue)}
+            td.brokers-web #{report.brokers_web.queries}
+            td.brokers-web #{report.brokers_web.engagements}
+            td.brokers-web #{humanized_money_with_symbol(report.brokers_web.cpe)}
+            td.brokers-web #{number_to_percentage(report.brokers_web.ctr*100, precision: 1)}
+            td.moss #{humanized_money_with_symbol(report.moss.revenue)}
+            td.moss #{report.moss.post}
+            td.moss #{report.moss.sold}
+            td.moss #{number_to_percentage(report.moss.sold_rate*100, precision: 1)}
+            td.moss #{number_to_percentage(report.epl*100, precision: 1)}
+            td.google #{report.google.impressions}
+            td.google #{report.google.clicks}
+            td.google #{number_to_percentage(report.google.ctr*100, precision: 1)}
+            td #{number_to_percentage(report.lpc*100, precision: 1)}
+            td #{number_to_percentage(report.tpc*100, precision: 1)}
+            td #{humanized_money_with_symbol(report.cost)}
+            td #{humanized_money_with_symbol(report.revenue)}
+            td #{humanized_money_with_symbol(report.profit)}
+            td #{humanized_money_with_symbol(report.rpc)}
+            td #{number_to_percentage(report.rc_ratio*100, precision: 1)}

@@ -1,0 +1,68 @@
+/*Tables
+---------------------------------------------------------*/
+.table,
+.table-striped,
+.table-hover {
+  width: 100%;
+  margin-bottom: 50px;
+  border-collapse: separate !important;
+  border: 1px solid #313447;
+  border-radius: 4px;
+  color: #313447;
+  text-align: center;
+}
+.table tr td,
+.table-striped tr td,
+.table-hover tr td {
+  border-bottom: 1px solid #313447;
+  border-left: 1px solid #313447;
+  padding: 2px !important;
+  text-align: right;
+}
+.table tr td:first-child,
+.table-striped tr td:first-child,
+.table-hover tr td:first-child {
+  border-left: none;
+}
+.table tr:last-child td,
+.table-striped tr:last-child td,
+.table-hover tr:last-child td {
+  border-bottom: none;
+}
+.table tr th,
+.table-striped tr th,
+.table-hover tr th {
+  vertical-align: bottom;
+  text-align: center;
+  border-top: none !important;
+  border-bottom: 2px solid #313447 !important;
+  border-left: 1px solid #313447;
+  padding-top: 20px !important;
+}
+.table-striped tr th,
+.table-hover tr th {
+  padding-bottom: 8px;
+}
+.table tr th:first-child,
+.table-striped tr th:first-child,
+.table-hover tr th:first-child {
+  border-left: none;
+}
+.table-striped tr:nth-child(odd) > td {
+  background-color: transparent !important;
+}
+.table-striped tr:nth-child(even) > td {
+  background-color: #cac6b7;
+}
+.table-striped tr:nth-child(odd) th {
+  background-color: transparent !important;
+}
+.table-hover tr:hover td {
+  background-color: #cac6b7 !important;
+  -webkit-transition: background-color 250ms ease;
+  -moz-transition: background-color 250ms ease;
+  transition: background-color 250ms ease;
+}
+.table-hover tr:hover th {
+  background-color: transparent !important;
+}

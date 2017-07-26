@@ -1,0 +1,39 @@
+/*Images
+---------------------------------------------------------*/
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.img-thumbnail,
+.img-circle-thumbnail {
+  padding: 5px;
+  border: 1px solid #313447;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.img-circle-thumbnail {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.img-circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.img-center {
+  display: table;
+  margin: auto;
+}

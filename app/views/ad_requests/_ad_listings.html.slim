@@ -1,0 +1,35 @@
+section#ads.page-block
+  .container
+    h3
+      b Click on a few of the companies below to get your rates.
+    #agents.plain
+      .col-lg-12#advs-featured-header
+        .row
+          .col-lg-6.col-md-6.col-sm-7.form-group
+            span.featured
+              | Featured insurers in
+              span#featured-city
+                = " "+@ad_request.get_proper_city_state
+      .col-lg-12#advs-featured
+        - @ad_request.ordered_ads.each_with_index do |ad, index|
+          a.row-link href = ad_path(ad) target='_blank' rel='nofollow'
+            .row
+              .divide10
+              .col-lg-1.col-md-1.col-sm-1.form-group.vcenter
+                .number
+                  h3
+                    == index+1
+              .col-lg-2.col-md-2.col-sm-3.form-group.vcenter.cell
+                .adv-wrapper__70_test style="margin-bottom:5px"
+                  = image_tag(ad.logo_link, width: "125", style: "border:0")
+                  .get-quote-button Get Your Quote
+              .col-lg-7.col-md-7.col-sm-5.form-group.vcenter.cell
+                h4.description == ad.header
+                == ad.content
+              .col-lg-2.col-md-2.col-sm-3.form-group.vcenter
+                fieldset
+                  button#submit-button.form-submit
+                    fieldset
+                      b confirm rates
+                      div#step-title Get Quote
+              .divide10

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  criteria_id: 
+  name: MyString
+  canonical_name: MyString
+  parent_id: 
+  country_code: MyString
+  target_type: MyString
+  status: MyString
+
+two:
+  criteria_id: 
+  name: MyString
+  canonical_name: MyString
+  parent_id: 
+  country_code: MyString
+  target_type: MyString
+  status: MyString

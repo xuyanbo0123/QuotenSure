@@ -1,0 +1,11 @@
+= simple_form_for(@revenue) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :r_type
+    = f.input :source
+    = f.input :token
+    = f.input :amount
+
+  .form-actions
+    = f.button :submit

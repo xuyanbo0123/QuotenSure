@@ -1,0 +1,18 @@
+section.page-block
+  .container
+    h1 Welcome to the Quote 'n' Sure Report
+    h2 Campaign Daily Report
+    ul
+      li Total number of days: #{@reports.length}
+    table.table
+      tr
+        th Date
+        th Impressions
+        th Clicks
+        th Cost
+      - @reports.each do |report|
+        tr
+          td #{report.day}
+          td #{report.impressions}
+          td #{report.clicks}
+          td #{report.cost}

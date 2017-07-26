@@ -1,0 +1,53 @@
+section#faq.page-block.faq
+  .divide10
+  .container
+    .row.page-header
+      h2 Auto Insurance Shopper's Guide
+      span Know more about auto insurance#{@ad_request.region_text}
+    .row
+      .col-lg-3.col-md-4.col-sm-4.text-center
+        img.img-center alt="Insurance basics" src=image_path("faq-icon.png") /
+      .col-lg-8.col-md-8.col-sm-8
+        #accordion-faq.panel-group
+          - unless @brand.nil?
+            .panel
+              a.panel-heading data-parent="#accordion-faq" data-toggle="collapse" href="#collapse1"
+                | What does people say about #{@brand.name}#{@ad_request.region_text}?
+                .indicator
+                  .icon
+                    span.hr-line
+                    span.vr-line
+              #collapse1.panel-collapse.collapse.in
+                .panel-body
+                  | #{@brand.featured_review}
+          .panel
+            a.panel-heading.collapsed data-parent="#accordion-faq" data-toggle="collapse" href="#collapse2"
+              | When to buy auto insurance#{@ad_request.region_text}?
+              .indicator
+                .icon
+                  span.hr-line
+                  span.vr-line
+            #collapse2.panel-collapse.collapse
+              .panel-body
+                | You should get quotes or speak with an agent BEFORE purchasing a car, even if you do not have an exact car type in mind. You can compare quotes from multiple providers to get the lowest rate. If you plan to buy a car, fill a simple form now to get your lowest quote.
+          .panel
+            a.panel-heading.collapsed data-parent="#accordion-faq" data-toggle="collapse" href="#collapse3"
+              | How to reduce auto insurance costs#{@ad_request.region_text}?
+              .indicator
+                .icon
+                  span.hr-line
+                  span.vr-line
+            #collapse3.panel-collapse.collapse
+              .panel-body
+                | In general, drivers who had experience(s) of at-fault accident pay more than those who‘ve kept accident-free record for years. If you’ve been accident-free for a period of time, try to get a lower rate by filling a simple form.
+          .panel
+            a.panel-heading.collapsed data-parent="#accordion-faq" data-toggle="collapse" href="#collapse4"
+              | How to renew your auto insurance#{@ad_request.region_text}?
+              .indicator
+                .icon
+                  span.hr-line
+                  span.vr-line
+            #collapse4.panel-collapse.collapse
+              .panel-body
+                | Most car insurance policies come up for renewal every 6 months, sometimes 12. You can call your agent or do it online to renew your policy. But the RIGHT way to renew your policy is filling a simple form to compare quotes again. 'Renewal' is almost ALWAYS the best chance to reduce your costs.
+  .divide30

@@ -1,0 +1,42 @@
+section.hero
+  .container
+    .row#slogan
+      h1.text-light.text-center style="font-weight:400;margin-top:20px;"  Compare & Save up to 70% on Car Insurance
+      .divide10
+      h2.hide-mobile.text-light.text-center style="font-weight:400;" Cheapest rates from as low as $29/month#{@ad_request.region_text}
+    .divide10
+    .row
+      .col-lg-4.col-md-4.col-sm-4.col-xs-1
+        - if @brand.present? && @brand.logo.present? && @brand.introduction.present?
+          .divide40
+          .featured-insurer.woman
+            .header
+              .row
+                .col-lg-4.col-md-4
+                  = image_tag(@brand.logo, width: "96")
+                .col-lg-8.col-md-8.featured-content
+                  h5#title Featured Insurer
+                  h3#name #{@brand.name}
+            .body #{@brand.introduction}
+      .col-lg-4.col-md-4.col-sm-4.col-xs-10
+        .divide10.hide-mobile
+        #home-panel-container
+          #home-panel
+            #home-panel-content
+              #q-zip
+                = form_for(@ad_request, :html => { id: "home-zip-form", class: "home-zip-form" }) do |f|
+                  .divide10
+                  h1 style='margin:0 0 8px 0' Start Here
+                  h1#qns-title Enter your zip code
+                  #home-qns
+                    #large-zip-submit
+                      = f.text_field :zip, maxlength:'5', size:'5', id:"f-zipcode", class: "zip", required: true
+                      .submit-button
+                        = f.submit "Start My Quote", id:"f-submit", class: "btn btn-danger btn-block submit-zip"
+                  .divide20
+        .divide20
+        .bottom-splash
+          small Compare rates from these and 20+ top companies
+          /img.companies alt=("top companies") src=image_path("companies.png") /
+      .col-lg-4.col-md-4.col-sm-4.col-xs-1
+        img.woman alt=("Quote n Sure") height="350" src=image_path("woman.png") width="215" /

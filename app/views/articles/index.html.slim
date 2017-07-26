@@ -1,0 +1,17 @@
+= render 'layouts/header'
+- @page_title = 'All articles'
+- @page_section = 'Insurance Library / All'
+= render 'layouts/bread_crumb'
+.divide10
+section#articles.page-block
+  .container
+    .row
+      .col-lg-12
+        h3.cs-heading List of articles
+        ul.articles
+          - @articles.each do |article|
+            li
+              a href= article_path(article)
+                = article.title
+.divide80
+= render 'layouts/footer'

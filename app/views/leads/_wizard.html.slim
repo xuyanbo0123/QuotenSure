@@ -1,0 +1,78 @@
+- cache('leads_wizard') do
+  section#wizard.page-block
+    .container
+      .row
+        .col-lg-12
+          .wizard
+            .header
+              h3 Fast, Free Auto Insurance Quotes
+            = simple_form_for @lead, :wrapper => 'inline_form' do |f|
+              =f.hidden_field :leadid_token, id:'leadid_token', value: ''
+              #step01.wizard-step.fade.in.active
+                .tab-links-wrap
+                  .overlay
+                  .row.tab-links
+                    .vehicle.tab-link.active.col-lg-3.col-md-3.col-sm-3.col-xs-3
+                      a data-toggle="tab" href="#vehicle"
+                        i.fa.fa-car
+                        span Vehicles
+                    .driver.tab-link.col-lg-3.col-md-3.col-sm-3.col-xs-3
+                      a data-toggle="tab" href="#driver"
+                        i.fa.fa-users
+                        span Drivers
+                    .policy.tab-link.col-lg-2.col-md-2.col-sm-2.col-xs-2
+                      a data-toggle="tab" href="#policy"
+                        i.fa.fa-file-text
+                        span Policy
+                    .contact.tab-link.col-lg-2.col-md-2.col-sm-2.col-xs-2
+                      a data-toggle="tab" href="#contact"
+                        i.fa.fa-th-list
+                        span Contact
+                    .incident.tab-link.col-lg-2.col-md-2.col-sm-2.col-xs-2
+                      a data-toggle="tab" href="#incident"
+                        i.fa.fa-info
+                        span Incident
+                .tabs
+                  #vehicle.tab.row.fade.in.active
+                    .col-lg-12
+                      #vehicles.active
+                        = f.simple_fields_for :vehicles, :wrapper => 'inline_form' do |vehicle|
+                          = render 'vehicle_fields', :f => vehicle
+                  #driver.tab.row.fade
+                    .col-lg-12
+                      #drivers.active
+                        = f.simple_fields_for :drivers, :wrapper => 'inline_form' do |driver|
+                          = render 'driver_fields', :f => driver
+                  #policy.tab.row.fade
+                    .col-lg-12
+                      = f.simple_fields_for :policy do |policy|
+                        = render 'policy_fields', :f => policy
+                  #contact.tab.row.fade
+                    .col-lg-12
+                      = f.simple_fields_for :contact do |contact|
+                        = render 'contact_fields', :f => contact
+                  #incident.tab.row.fade
+                    .col-lg-12
+                      .row
+                        .col-lg-4.col-md-4.col-sm-4.form-group
+                          =f.input :has_incident,  label: 'Do you have any incidents in the past 3 years?', collection: add_prompt(Lead.has_incident_pairs), selected: Lead.has_incident_selected_id, input_html:{ class: 'has_incident'}
+                      #incidents.active
+                        = f.simple_fields_for :incidents do |incident|
+                          = render 'incident_fields', :f => incident
+              /! Wizard footer
+              .wizard-footer.group
+                .buttons.links
+                  = link_to_add_association 'Add Vehicle', f, :vehicles, :render_options => { :wrapper => 'inline_form' }, :class => 'btn-3d btn-danger vehicle'
+                  = link_to_add_association 'Add Driver', f, :drivers, :render_options => { :wrapper => 'inline_form' }, :class => 'btn-3d btn-danger driver hidden'
+                  = link_to_add_association 'Add Incident', f, :incidents, :render_options => { :wrapper => 'inline_form' }, :class => 'btn-3d btn-danger incident hidden'
+                  a.btn-3d.btn-default.prev-tab.hidden href="#"
+                    i.fa.fa-chevron-left
+                    | Back
+                  a.btn-3d.btn-default.next-tab href="#"
+                    = 'Next '
+                    i.fa.fa-chevron-right
+                  = f.button :submit, :disable_with => 'Please wait ...', :class => 'btn-lg btn-3d btn-success submit-lead hidden', :value => 'Submit'
+                label#tcpa_disclosure.hidden
+                  = f.hidden_field :leadid_tcpa_disclosure, value:'', id:'leadid_tcpa_disclosure'
+                  | By clicking 'Submit', I authorize insurance companies, their agents and partners to contact me about auto insurance offers by phone calls and text messages to the number I provided. I agree to receive telemarketing calls and pre-recorded messages via an automatic telephone dialing system. I understand that my consent is not a condition of purchase of any goods or services.
+

@@ -1,0 +1,23 @@
+.nested-fields
+  .row.title-row
+    .col-lg-1.col-md-1.col-sm-1.form-group
+      a.title-logo
+        i.fa.fa-file-text
+    .col-lg-5.col-md-5.col-sm-5.form-group
+      a.coverage-text COVERAGE
+    .col-lg-2.col-md-2.col-sm-2.form-group
+      a INSURED?
+    .col-lg-1.col-md-1.col-sm-1.form-group
+      a.is-insured-text NO
+  .row
+    .col-lg-4.col-md-4.col-sm-4.form-group
+      = f.input :request_coverage_id, as: :select, label: 'Coverage desired', collection: pairs(RequestCoverage), selected: RequestCoverage.selected_id, input_html:{ class: 'coverage' }
+    .col-lg-3.col-md-3.col-sm-3.form-group
+      = f.input :is_insured_id, label: 'Currently insured?', collection: pairs(IsInsured), selected: IsInsured.selected_id, input_html:{ class: 'is-insured' }
+  .row.insured.init-fade
+    .col-lg-4.col-md-4.col-sm-4.form-group
+      = f.input :company_id, as: :select, label: 'Current insurance company', collection: pairs(Company), selected: Company.selected_id, input_html:{ class:'company-id required' }
+    .col-lg-3.col-md-3.col-sm-3.form-group
+      = f.input :expiration_date, as: :date_picker, placeholder: 'mm/dd/yyyy', label: 'Expiration date', input_html:{class:'expiration-date required'}
+    .col-lg-5.col-md-5.col-sm-5.form-group
+      = f.input :continuous_year_id, as: :select, label: 'How long have you had insurance?', collection: pairs(ContinuousYear), selected: ContinuousYear.selected_id

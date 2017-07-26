@@ -1,0 +1,16 @@
+KEY,MOSS,DISPLAY,IS_DISPLAY,REVI
+_CARELESS_DRIVING,Careless Driving,Careless Driving,1,Careless driving
+_DEFECTIVE_EQUIPMENT,Defective Equipment,Defective Equipment,1,Defective Equipment
+_FAILURE_TO_OBEY_SIGNAL,Failure To Obey Signal,Failure To Obey Signal,1,Failure to obey traffic signal
+_SPEEDING_VIOLATION,Speeding Violation,Speeding Violation,1,Other Unlisted Moving Violation
+_INVALID_LICENSE,Invalid License,Invalid License,1,Expired drivers license
+_NO_INSURANCE,No Insurance,No Insurance,1,No insurance
+_NO_LICENSE,No License,No License,1,Driving without a license
+_NO_SEATBELT,No Seatbelt,No Seatbelt,1,No seatbelt
+_RECKLESS_DRIVING,Reckless Driving,Reckless Driving,1,Reckless driving
+_SAFETY_VIOLATION,Safety Violation,Safety Violation,1,Other Unlisted Moving Violation
+_SPEEDING_100_OVER,Speeding 100 Over,Speeding 100 Over,1,Other Unlisted Moving Violation
+_SPEEDING_10_TO_20_OVER,Speeding 10 to 20 Over,Speeding 10 to 20 Over,1,Other Unlisted Moving Violation
+_SPEEDING_20_OVER,Speeding 20 Over,Speeding 20 Over,1,Other Unlisted Moving Violation
+_SPEEDING_UNDER_10_OVER,Speeding Under 10 Over,Speeding Under 10 Over,1,Other Unlisted Moving Violation
+_TICKET_VIOLATION_NOT_LISTED,Ticket Violation Not Listed,Ticket Violation Not Listed,1,Other Unlisted Moving Violation

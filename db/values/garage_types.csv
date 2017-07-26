@@ -1,0 +1,9 @@
+KEY,MOSS,DISPLAY,IS_DISPLAY,REVI
+_NO_COVER,No Cover,No Cover,0,No Cover
+_CARPORT,Carport,Carport,0,Car Port
+_GARAGE,Garage,Garage,1,Full Garage
+_LOCKED,Locked,Locked,0,On Street
+_PARKING_LOT,Parking Lot,Parking Lot,1,Car Port
+_PRIVATE,Private,Private,1,On Street
+_STREET,Street,Street,1,On Street
+_OTHER,Other,Other,1,On Street

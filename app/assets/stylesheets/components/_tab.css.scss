@@ -1,0 +1,88 @@
+/*Tabs Horizontal*/
+.nav li:before {
+  display: none;
+}
+.nav-tabs {
+  border-bottom: 1px solid #313447;
+  margin-bottom: 30px;
+}
+.nav-tabs.central {
+  text-align: center;
+}
+.nav-tabs.central li {
+  float: none;
+  display: inline-block;
+}
+.nav-tabs > li > a {
+  margin-right: 3px;
+  color: #313447;
+  line-height: 1.3;
+  padding: 10px 16px;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  -webkit-transition: border-left 250ms ease, border-top 250ms ease, border-right 250ms ease;
+  -moz-transition: border-left 250ms ease, border-top 250ms ease, border-right 250ms ease;
+  transition: border-left 250ms ease, border-top 250ms ease, border-right 250ms ease;
+}
+.nav-tabs > li > a:hover {
+  border-color: #9a9ba4 #9a9ba4 #313447;
+  background-color: transparent;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #313447;
+  border: 1px solid #313447;
+  border-bottom: 1px solid transparent;
+}
+.tab-content.central {
+  padding-top: 40px;
+}
+
+/*Tabs Vertical*/
+.tabs-vertical {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+.tabs-vertical .nav-tabs {
+  width: auto !important;
+  border-right: 1px solid #313447;
+  border-bottom: none;
+  margin-right: 35px;
+  display: table-cell;
+}
+.tabs-vertical .nav-tabs > li {
+  float: none;
+  margin-right: -4px;
+}
+.tabs-vertical .nav-tabs > li > a {
+  margin-bottom: 3px;
+  color: #313447;
+  line-height: 1.3;
+  border: 1px solid transparent;
+  padding: 10px 16px;
+  -webkit-border-radius: 5px 0px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 0px 0px 5px;
+  -webkit-transition: border-bottom 250ms ease, border-left 250ms ease, border-top 250ms ease;
+  -moz-transition: border-bottom 250ms ease, border-left 250ms ease, border-top 250ms ease;
+  transition: border-bottom 250ms ease, border-left 250ms ease, border-top 250ms ease;
+}
+.tabs-vertical .nav-tabs > li > a:hover {
+  border-color: #9a9ba4 #313447 #9a9ba4 #9a9ba4;
+  background-color: transparent;
+}
+.tabs-vertical .nav-tabs > li.active > a,
+.tabs-vertical .nav-tabs > li.active > a:hover,
+.tabs-vertical .nav-tabs > li.active > a:focus {
+  color: #313447;
+  border: 1px solid #313447;
+  background-color: #ffffff;
+  border-right: 1px solid transparent;
+}
+.tabs-vertical .tab-content {
+  display: table-cell;
+  padding-left: 35px;
+}

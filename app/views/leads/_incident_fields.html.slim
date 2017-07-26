@@ -1,0 +1,51 @@
+.nested-fields
+  .hidden
+    =f.hidden_field :rid, { value: '0', class: 'rid' }
+  .row.title-row
+    .col-lg-1.col-md-1.col-sm-1.form-group
+      a.title-logo
+        i.fa.fa-info
+    .col-lg-2.col-md-2.col-sm-2.form-group
+      a.incident-type-text INCIDENT TYPE
+    .col-lg-8.col-md-8.col-sm-8.form-group
+      a.driver-rid-text DRIVER
+    .col-lg-1.col-md-1.col-sm-1.form-group
+      .btn-bar
+        a.toggle-btn.plus.init-fade +
+        a.toggle-btn.minus –
+        a.fake.remove-btn ×
+        = link_to_remove_association '×',  f, class: 'remove-btn init-fade'
+  .ctrl
+    .row
+      .col-lg-4.col-md-4.col-sm-4.form-group
+        = f.input :incident_type_id, label: 'Type of incident', collection: add_prompt(Incident.pairs), selected: Incident.selected_id, input_html:{ class: 'incident-type'}
+      .col-lg-4.col-md-4.col-sm-4.form-group
+        = f.input :driver_rid, as: :select, label: "Driver", input_html:{ class: 'driver-rid required'}
+      .col-lg-4.col-md-4.col-sm-4.form-group
+        .row
+          label.span-label Year and month of the incident
+        .row
+          .col-lg-6.col-md-6.col-sm-6.form-group
+            = f.input :year, label: false, collection: 2012..2015, prompt:'Year', input_html:{ class: 'incident-year required' }
+          .col-lg-6.col-md-6.col-sm-6.form-group
+            = f.input :month, label: false, collection: 1..12, prompt:'Month', input_html:{ class: 'incident-month required' }
+    .row
+      .col-lg-3.col-md-3.col-sm-3.form-group.ticket-type.init-fade
+        = f.input :ticket_type_id, label: 'Type of ticket', collection: pairs(TicketType), selected: TicketType.selected_id
+      .col-lg-3.col-md-3.col-sm-3.form-group.claim-type.init-fade
+        = f.input :claim_type_id, label: 'Type of claim', collection: pairs(ClaimType), selected: ClaimType.selected_id
+      .col-lg-3.col-md-3.col-sm-3.form-group.accident-type.init-fade
+        = f.input :accident_type_id, label: 'Type of accident', collection: pairs(AccidentType), selected: AccidentType.selected_id
+      .col-lg-3.col-md-3.col-sm-3.form-group.incident-state.init-fade
+        = f.input :state, label: 'What state was it in?', collection: add_prompt(IpToLocation.state_pairs), selected: IpToLocation.selected_id
+      .col-lg-3.col-md-3.col-sm-3.form-group.damage-type.init-fade
+        = f.input :damage_type_id, label: 'Damage', collection: pairs(DamageType), selected: DamageType.selected_id
+      .col-lg-3.col-md-3.col-sm-3.form-group.at-fault.init-fade
+        = f.input :at_fault, label: 'Driver at Fault?', collection: add_prompt(Incident.at_fault_pairs), selected: Incident.at_fault_selected_id
+      .col-lg-3.col-md-3.col-sm-3.form-group.paid-amount.init-fade
+        = f.input :paid_amount, label: 'Amount paid'
+
+
+
+
+

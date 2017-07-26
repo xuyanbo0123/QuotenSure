@@ -1,0 +1,54 @@
+.leads{
+  @import "components/wizard";
+  @import "components/form";
+  @import "components/tab";
+  @import "colors/color-499ed7";
+  @import "libs/jquery.selectBoxIt";
+  @import "jquery-ui/datepicker";
+  @import "jquery-ui/selectmenu";
+  
+  span.error{
+    border-color: #FF4941 !important;
+    box-shadow: 0px 0px 0px 2px #FF4941 !important;
+  }
+  .title-row {
+    font-weight: lighter;
+    p.small {
+      font-size: 1.2em;
+      line-height: 90%;
+      margin-bottom: 0px;
+    }
+
+    a {
+      font-size: 1.6em;
+      font-weight: 300;
+      text-decoration: inherit;
+      cursor: pointer;
+    }
+
+    .remove-btn {
+      color: darkred;
+      float:right
+    }
+
+    .fake
+    {
+      color: lightgrey;
+    }
+  }
+
+  .span-label {
+    padding-left: 15px;
+  }
+  .add-action {
+    float: right;
+  }
+
+  .selectboxit-container .selectboxit-options {
+    max-height: 240px;
+  }
+  #tcpa_disclosure {
+    font-size: smaller;
+    color: grey;
+  }
+}

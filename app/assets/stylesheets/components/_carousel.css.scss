@@ -1,0 +1,102 @@
+/*Carousel
+---------------------------------------------------------*/
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 65px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: none !important;
+  background-color: transparent;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+.carousel-control.left {
+  background-image: none !important;
+}
+.carousel-control.right {
+  left: auto;
+  right: 0;
+  background-image: none !important;
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  outline: none;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  background-color: #313447;
+}
+.carousel-control span {
+  display: block;
+  position: absolute;
+  font-size: 1.5em;
+  color: #ffffff;
+  top: 50%;
+  margin-top: -15px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+.carousel:hover .carousel-control span {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.carousel-control .icon-arrow-left2 {
+  left: 15px;
+}
+.carousel-control .icon-arrow-right2 {
+  right: 15px;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 8px;
+  text-indent: -999px;
+  background-color: #ffffff;
+  border: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -webkit-transition:  -webkit-transform 0.3s ease, opacity 0.3s ease;
+  -moz-transition: -moz-transform 0.3s ease, opacity 0.3s ease;
+  transition:  transform 0.3s ease, opacity 0.3s ease;
+}
+.carousel-indicators li:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.carousel-indicators .active {
+  margin: 0 8px;
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  transform: scale(1.4);
+}

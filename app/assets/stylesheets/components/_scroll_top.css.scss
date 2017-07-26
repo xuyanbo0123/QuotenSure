@@ -1,0 +1,28 @@
+/*Scroll To Top Button
+---------------------------------------------------------*/
+#scroll-top {
+  position: fixed;
+  z-index: 10;
+  right: -50px;
+  bottom: 10px;
+  width: 45px;
+  height: 45px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #313447;
+  padding-top: 12px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#scroll-top i { font-size: 1.3em; }
+#scroll-top:hover {
+  background-color: #464962;
+}
+#scroll-top.visible {
+  right: 10px;
+}

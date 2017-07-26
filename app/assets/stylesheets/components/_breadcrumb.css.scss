@@ -1,0 +1,35 @@
+/****************************breadcrumb***************************/
+.breadcrumb-wrap{
+  padding: 25px 0;
+  background:#eee;
+}
+.breadcrumb-wrap h4{
+  font-size: 1.4em;
+  margin: 0px;
+  color:#333;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.breadcrumb-wrap h5{
+  font-size: 1.2em;
+  margin: 0px;
+  color:#333;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+ol.breadcrumb{
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color:#333;
+}
+ol.breadcrumb li a{
+  color:#333;
+}
+/***list of highlight**/
+.highlight-list li i{
+  color:#3498db;
+  margin-right: 10px;
+}

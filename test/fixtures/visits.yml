@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uuid: MyString
+  ip: MyString
+  browser: MyString
+  device: MyString
+  gclid: MyString
+  conversion: 1
+
+two:
+  uuid: MyString
+  ip: MyString
+  browser: MyString
+  device: MyString
+  gclid: MyString
+  conversion: 1

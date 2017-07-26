@@ -1,0 +1,31 @@
+<ListingsResult>
+  <OpenMatchListings/>
+  <ResponseStatus>
+    <Status xmlns="">Ok</Status>
+  </ResponseStatus>
+  <Results>
+    <OutPutListing xmlns="">
+      <BrandName>Progressive</BrandName>
+      <Description>
+        <Element>Paying too much on auto insurance? Drivers who switch to Progressive save an average of over $548. So
+          get a free quote today to see how much you could save!
+        </Element>
+      </Description>
+      <DescriptionType>Paragraph</DescriptionType>
+      <DisplayUrl>www.Progressive.com</DisplayUrl>
+      <EngagementId>5138f135-19f5-4bb4-bca5-95592a68630a_43990</EngagementId>
+      <HeadLine>Miami, Florida drivers, you could save hundreds on car insurance with Progressive</HeadLine>
+      <ListingId>43990</ListingId>
+      <LogoUrl>//images.vantage-media.net/logos/36871_606.gif?e=5138f135-19f5-4bb4-bca5-95592a68630a_43990&amp;pos=1
+      </LogoUrl>
+      <Products>
+        <Product>
+          <ActionUrl>
+            //marketplaces.vantagemedia.com/click/5138f135-19f5-4bb4-bca5-95592a68630a/43990/aHR0cDovL2FkLmRvdWJsZWNsaWNrLm5ldC9jbGs7MjUwMjkwMzc3Ozc1MTY0NTIyO2c7cGM9W1RQQVNfSURdP2h0dHA6Ly93d3cucHJvZ3Jlc3NpdmUuY29tL2luc3VyYW5jZS9zYS9hdXRvL2Jyb2tlcnN3ZWIvZGVmYXVsdC5hc3B4P2NvZGU9ODAxNDUwMDAwMSZ6aXBjb2RlPSZCV19TUkM9e2VuZ2FnZW1lbnRpZH0mYndpbnN1cmVkPQ..
+          </ActionUrl>
+          <Type>Click</Type>
+        </Product>
+      </Products>
+    </OutPutListing>
+  </Results>
+</ListingsResult>

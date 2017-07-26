@@ -1,0 +1,75 @@
+KEY,MOSS,DISPLAY,IS_DISPLAY,REVI
+_ADMINISTRATIVE_CLERICAL,Administrative Clerical,Administrative Clerical,1,Employeed
+_ADVERTISING,Advertising,Advertising,1,Employeed
+_APPRAISER,Appraiser,Appraiser,1,Employeed
+_ARCHITECT,Architect,Architect,1,Architect
+_ARTIST,Artist,Artist,1,Employeed
+_ASSEMBLER,Assembler,Assembler,1,Employeed
+_BAKER,Baker,Baker,1,Employeed
+_BANKER,Banker,Banker,1,Employeed
+_BANK_TELLER,Bank Teller,Bank Teller,1,Employeed
+_BARTENDER,Bartender,Bartender,1,Employeed
+_BROKER,Broker,Broker,1,Sales
+_BUSINESS_OWNER,Business Owner,Business Owner,1,BusinessOwner
+_CASHIER,Cashier,Cashier,1,Employeed
+_CASINO_WORKER,Casino Worker,Casino Worker,1,Employeed
+_CEO,CEO,CEO,1,Employeed
+_CERTIFIED_PUBLIC_ACCOUNTANT,Certified Public Accountant,Certified Public Accountant,1,Employeed
+_CHEMIST,Chemist,Chemist,1,Scientist
+_CHILDCARE,ChildCare,ChildCare,1,Employeed
+_CITYWORKER,CityWorker,CityWorker,1,Employeed
+_CLERGY,Clergy,Clergy,1,Employeed
+_CONSTRUCTION_TRADES,Construction Trades,Construction Trades,1,Employeed
+_CONSULTANT,Consultant,Consultant,1,Employeed
+_CONTRACTOR,Contractor,Contractor,1,Employeed
+_DECORATOR,Decorator,Decorator,1,Employeed
+_DELIVERY_DRIVER,Delivery Driver,Delivery Driver,1,Employeed
+_DENTIST,Dentist,Dentist,1,Medical
+_DISABLED,Disabled,Disabled,1,Other
+_ELECTRICIAN,Electrician,Electrician,1,Employeed
+_ENGINEER,Engineer,Engineer,1,OtherTechnical
+_ENTERTAINER,Entertainer,Entertainer,1,Employeed
+_FARMER,Farmer,Farmer,1,Employeed
+_FIREFIGHTER,FireFighter,FireFighter,1,Employeed
+_GOVERNMENT,Government,Government,1,Government
+_HEALTH_CARE,Health Care,Health Care,1,Medical
+_HOMEMAKER,Homemaker,Homemaker,1,Homemaker
+_HOSPITALITY_TRAVEL,Hospitality Travel,Hospitality Travel,1,Medical
+_HUMAN_RELATIONS,Human Relations,Human Relations,1,Employeed
+_HUMAN_RESOURCES,Human Resources,Human Resources,1,Employeed
+_JOURNALIST,Journalist,Journalist,1,Employeed
+_LAB_TECHNICIAN,Lab Technician,Lab Technician,1,Scientist
+_LAWYER,Lawyer,Lawyer,1,Employeed
+_MARKETING,Marketing,Marketing,1,Marketing
+_MANAGER_SUPERVISOR,Manager Supervisor,Manager Supervisor,1,Employeed
+_MINOR_NOT_APPLICABLE,Minor Not Applicable,Minor Not Applicable,1,Unknown
+_MODEL,Model,Model,1,Employeed
+_OTHER_NON_TECHNICAL,Other Non Technical,Other Non Technical,1,Other
+_OTHER_TECHNICAL,Other Technical,Other Technical,1,OtherTechnical
+_PARALEGAL,Paralegal,Paralegal,1,Employeed
+_PARAMEDIC,Paramedic,Paramedic,1,Employeed
+_PHOTOGRAPHER,Photographer,Photographer,1,Employeed
+_PHYSICIAN,Physician,Physician,1,Medical
+_POLICE_OFFICER,Police Officer,Police Officer,1,Government
+_POSTAL_WORKER,Postal Worker,Postal Worker,1,Employeed
+_PROFESSIONAL_SALARIED,Professional Salaried,Professional Salaried,1,Scientist
+_PROFESSOR,Professor,Professor,1,Scientist
+_REAL_ESTATE,Real Estate,Real Estate,1,Sales
+_RECEPTIONIST,Receptionist,Receptionist,1,Employeed
+_RETAIL,Retail,Retail,1,Retail
+_RETIRED,Retired,Retired,1,Retired
+_SALES,Sales,Sales,1,Sales
+_SALES_INSIDE,Sales Inside,Sales Inside,1,SalesInside
+_SALES_OUTSIDE,Sales Outside,Sales Outside,1,SalesOutside
+_SCHOOL_TEACHER,School Teacher,School Teacher,1,Employeed
+_SCIENTIST,Scientist,Scientist,1,Scientist
+_SELF_EMPLOYED,Self Employed,Self Employed,1,Employeed
+_SKILLED_SEMI_SKILLED,Skilled Semi Skilled,Skilled Semi Skilled,1,Employeed
+_STUDENT,Student,Student,1,Student
+_TEACHER,Teacher,Teacher,1,Employeed
+_TECHNOLOGY,Technology,Technology,1,OtherTechnical
+_TELECOMMUNICATIONS,Telecommunications,Telecommunications,1,Employeed
+_TRANSPORTATION_OR_LOGISTICS,Transportation or Logistics,Transportation or Logistics,1,Employeed
+_UNEMPLOYED,Unemployed,Unemployed,1,Unemployed
+_WAITERWAITRESS,WaiterWaitress,WaiterWaitress,1,Employeed
+_NOT_LISTED,Not Listed,Not Listed,1,Other

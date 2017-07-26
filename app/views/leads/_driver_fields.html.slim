@@ -1,0 +1,47 @@
+.nested-fields
+  .hidden
+    =f.hidden_field :rid, { value: '0', class: 'rid' }
+  .row.title-row
+    .col-lg-9.col-md-9.col-sm-9.form-group
+      a.title-logo
+        i.fa.fa-user
+      a.space-text = ' '
+      a.relationship-text PRIMARY DRIVER (PD)
+      a.space-text = ' : '
+      a.name-text NAME
+    .col-lg-2.col-md-2.col-sm-2.form-group
+      a.birthday-text
+    .col-lg-1.col-md-1.col-sm-1.form-group
+      .btn-bar
+        a.toggle-btn.plus.init-fade +
+        a.toggle-btn.minus –
+        a.fake.remove-btn ×
+        = link_to_remove_association '×',  f, class: 'remove-btn init-fade'
+  .ctrl
+    .row
+      .col-lg-3.col-md-3.col-sm-3.form-group
+        = f.input :relationship_id, label:'Relationship to PD', collection: pairs(Relationship), selected: Relationship.selected_id, input_html:{ class: 'relationship' }
+      .col-lg-3.col-md-3.col-sm-3.form-group
+        = f.input :first_name, placeholder: 'Enter first name', input_html:{ minlength:'2', class: 'name first-name' }
+      .col-lg-3.col-md-3.col-sm-3.form-group
+        = f.input :last_name, placeholder: 'Enter last name', input_html:{ minlength:'2', class: 'name last-name' }
+      .col-lg-3.col-md-3.col-sm-3.form-group
+        = f.input :birthday, as: :date_picker, placeholder: 'mm/dd/yyyy', label: 'Date of birth', input_html:{ class: 'birthday is-valid-birthday' }
+    .row
+      .col-lg-3.col-md-3.col-sm-3.form-group
+        = f.input :gender_id, collection: pairs(Gender), selected: Gender.selected_id
+      .col-lg-3.col-md-3.col-sm-3.form-group
+        = f.input :marital_status_id, collection: pairs(MaritalStatus), selected: MaritalStatus.selected_id
+      .col-lg-3.col-md-3.col-sm-3.form-group
+        = f.input :occupation_id, collection: pairs(Occupation), selected: Occupation.selected_id
+      .col-lg-3.col-md-3.col-sm-3.form-group
+        = f.input :education_id, collection: pairs(Education), selected: Education.selected_id
+    .row
+      .col-lg-3.col-md-3.col-sm-3.form-group
+        = f.input :credit_id, label: 'Credit rating', collection: pairs(Credit), selected: Credit.selected_id
+      .col-lg-3.col-md-3.col-sm-3.form-group
+        = f.input :age_lic_id, label: 'Age first licensed', collection: pairs(AgeLic), selected: AgeLic.selected_id
+      .col-lg-3.col-md-3.col-sm-3.form-group
+        = f.input :lic_status_id, label: 'License status', collection: pairs(LicStatus), selected: LicStatus.selected_id
+      .col-lg-3.col-md-3.col-sm-3.form-group
+        = f.input :is_sr22_id, label: 'Is SR-22 needed?', collection: pairs(IsSr22), selected: IsSr22.selected_id
